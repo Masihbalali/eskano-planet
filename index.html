@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html dir="rtl">
+  <head lang="en">
+    <meta charset="utf-8" />
+    <title>My first three.js app</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <style>
+      body {
+        margin: 0;
+        background-color: #000000;
+        scroll-behavior: smooth;
+      }
+      h1,
+      input {
+        color: blue;
+        z-index: 10;
+        background-color: transparent;
+        margin: 0;
+        position: absolute;
+        top: 100px;
+        font-size: 55px;
+        /* margin: auto; */
+        left: 50%;
+      }
+      .sidebar {
+        position: absolute;
+        color: #fff;
+      }
+      .home {
+        font-size: 22px;
+        position: absolute;
+        /* border:1px solid #ccc; */
+        padding: 10px 20px;
+        border-radius: 7px;
+        display: inline;
+        margin: 10px;
+        /* background-color: rgba(255, 255, 255, 0.20); */
+        transition: all 0.2s;
+      }
+      .home:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+        cursor: pointer;
+      }
+      input {
+        display: block;
+        background: #ccc;
+        border: none;
+        border-radius: 23px;
+        font-size: 30px;
+        color: black;
+        padding: 5px 10px;
+      }
+      .header {
+        position: fixed;
+        z-index: 10;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        height: 40px;
+      }
+      .header span {
+        margin: 0 10px;
+      }
+      .body {
+        font-size: 24px;
+        position: absolute;
+        width: 40%;
+        height: 100%;
+        background-color: transparent;
+        padding-top: 22px;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .body p {
+        border: 1px solid;
+        border-radius: 12px;
+        text-align: center;
+        font-size: 17px;
+        width: 50%;
+      }
+      .hero-container {
+        padding: 20px 30px;
+      }
+      .glass {
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.5px);
+        -webkit-backdrop-filter: blur(6.5px);
+        /* border: 1px solid rgba(255, 255, 255, 0.3); */
+      }
+      .scrolldown {
+        position: absolute;
+        bottom: 0;
+        height: 30px;
+        width: 100%;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18;
+        font-weight: bold;
+        letter-spacing: 2px;
+      }
+      .scrolldown a {
+        text-decoration: none;
+        color: white;
+      }
+      .othercontent {
+        position: absolute;
+        color: white;
+        top: 100%;
+      }
+      .rotate {
+        transform: rotate(45deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header glass">
+      <span>item1</span>
+      <span>item1</span>
+      <span>item1</span>
+      <span>item1</span>
+      <span>item1</span>
+    </div>
+
+    <div class="body">
+      <div class="hero-container glass">
+        <span id="eskano-captio">اسکانو</span><br />
+        <span id="eskano-text">اسکانو اولین سیاره کشف ایده‌های نو.</span>
+        <p>شروع یک سفر</p>
+      </div>
+    </div>
+
+    <div class="scrolldown">
+      <span><a href="#othercontent">Click</a></span>
+    </div>
+
+    <div class="othercontent" id="othercontent">
+      <img id="planetimg" src="./assets/images/greenplanet.png" />
+      <p class="othercontetn">OtherContertn</p>
+      <br />
+      <p class="othercontetn">OtherContertn</p>
+      <br />
+      <p class="othercontetn">OtherContertn</p>
+      <br />
+      <p>OtherContertn</p>
+      <br />
+      <p>OtherContertn</p>
+      <br />
+      <p>OtherContertn</p>
+      <br />
+      <p>OtherContertn</p>
+      <br />
+      <p>OtherContertn</p>
+      <br />
+      <p>OtherContertn</p>
+      <br />
+      <p>OtherContertn</p>
+      <br />
+      <p>OtherContertn</p>
+      <br />
+      <p>OtherContertn</p>
+      <br />
+      <p>OtherContertn</p>
+      <br />
+      <p>OtherContertn</p>
+      <br />
+      <p>OtherContertn</p>
+      <br />
+      <p>OtherContertn</p>
+      <br />
+      <p>OtherContertn</p>
+      <br />
+      <p>OtherContertn</p>
+      <br />
+      <p>OtherContertn</p>
+      <br />
+      <p>OtherContertn</p>
+      <br />
+    </div>
+    <video
+      id="video"
+      playsinline
+      webkit-playsinline
+      loop
+      controls
+      src="ajax.mp4"
+      style="display: none"
+    ></video>
+
+    <script type="module" src="./porche.js" async></script>
+    <script src="animation.js"></script>
+  </body>
+</html>

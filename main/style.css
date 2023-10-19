@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #101010;
+    color: white!important;
+    scroll-behavior: smooth;
+}
+.bgc{
+    background-color: #2a282800;
+
+}
+.nav-costume{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+.nav-costume li a{
+    color: white!important;
+    font-size: 18px;
+
+}
+
+.topright-bgicon{
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+#logo{
+    position: absolute;
+    right: 10%;
+    margin: 10px;
+    font-size: 32px;
+}
+
+.topright-bgblur{
+    width: 300px;
+    height: 300px;
+    flex-shrink: 0;
+    border-radius: 300px;
+    background: var(--Pur-Es, #BE229C);
+    filter: blur(250px);
+    position: absolute;
+}
+.topleft-bgblur{
+    width: 341px;
+height: 341px;
+flex-shrink: 0;
+border-radius: 341px;
+background: #7C3EFF;
+filter: blur(250px);
+position: absolute;
+left: 0;
+}
+.herosec-container h1{
+    font-size: 80px;
+}
+.herosec-container h2{
+    font-size: 40px;
+    margin: 15px 0;
+}
+.herosec-container span{
+    font-size: 24px;
+    color: #E0E5F3;
+    margin-bottom: 15px;
+}
+
+.start-project-btn{
+padding: 16px 24px;
+border-radius: 30px;
+background: #93D83F;
+color: #fff;
+text-decoration: none;
+}
+
+
